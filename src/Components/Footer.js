@@ -11,7 +11,7 @@ const Footer = () => {
     <footer className="bg-[#133009] text-white">
       <div className="max-w-6xl mx-auto  py-10">
         <div className="flex flex-wrap justify-between items-center">
-          {/* Logo and query section */}
+        
           <div className="mb-6 w-full md:w-auto md:mb-0">
             <a href="#" className="flex items-center justify-center  space-x-2 mb-4">
               <img src={logo} alt="DeCarbonn Logo " className="h-14" />
@@ -36,7 +36,7 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Company and Initiatives section */}
+          
           <div className="flex flex-wrap md:space-x-20 mb-6 md:mb-0">
             <div className="mb-6 md:mb-0">
               <h3 className="font-bold mb-2">COMPANY</h3>
@@ -57,10 +57,7 @@ const Footer = () => {
           </div>
         </div>
 
-        {/* Divider */}
-        {/* <div className="border-t border-white border-opacity-25 my-6"></div> */}
-
-        {/* Bottom section */}
+       
         <div className="flex flex-col items-center">
           <p className="text-center py-2">Made with ❤️ at Maiti Labs</p>
           <p>Copyright © 2024 <strong>DeCarbonn</strong></p>

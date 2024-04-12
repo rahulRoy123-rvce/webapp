@@ -1,4 +1,4 @@
-// AccordionItem.jsx
+
 import React, { useState } from 'react';
 import { ChevronDownIcon } from '@heroicons/react/solid';
 

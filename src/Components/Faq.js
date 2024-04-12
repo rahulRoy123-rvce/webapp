@@ -1,5 +1,4 @@
 
-// FAQ.jsx
 import React from 'react';
 import AccordionItem from './Accordianitem';
 

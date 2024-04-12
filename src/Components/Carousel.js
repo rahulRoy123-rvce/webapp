@@ -1,6 +1,6 @@
-// Carousel.jsx
+
 import React, { useState } from 'react';
-import Card from './Card'; // Assume we have a Card component
+import Card from './Card'; 
 import frame1 from '../Assets/frame1.png';
 import frame2 from '../Assets/frame2.png';
 import frame3 from '../Assets/frame3.png';

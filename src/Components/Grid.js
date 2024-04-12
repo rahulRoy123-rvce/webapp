@@ -1,12 +1,11 @@
-// GalleryGrid.jsx
+
 import React from 'react';
 import Boot from '../Assets/Boot.png';
 import leaf from '../Assets/leaf.png';
 import earth from '../Assets/earth.png';
 import money from '../Assets/money.png';
 
-// GalleryGrid.jsx
-// import React from 'react';
+
 
 const GalleryGrid = () => {
   return (
