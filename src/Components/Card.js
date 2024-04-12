@@ -8,7 +8,7 @@ const Card = ({ title, imageSrc, chartType }) => {
   };
 
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden">
+    <div className="bg-[#fdfaec] rounded-lg  overflow-hidden">
       {/* Card Header */}
       <div className="p-4 border-b">
         <h2 className="font-bold text-lg">{title}</h2>

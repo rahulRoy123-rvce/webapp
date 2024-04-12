@@ -29,7 +29,7 @@ const resources = [
 ];
 
 const ResourceCard = ({ title, image, status }) => (
-  <div className="flex flex-col bg-white rounded-2xl overflow-hidden shadow-lg">
+  <div className="flex flex-col bg-white  rounded-2xl overflow-hidden shadow-lg">
     <img src={image} alt={title} className="w-full h-48 object-cover" />
     <div className="p-4">
       <h3 className="font-semibold text-lg mb-2">{title}</h3>
@@ -40,8 +40,8 @@ const ResourceCard = ({ title, image, status }) => (
 
 const FeaturedResources = () => {
   return (
-    <div className="bg-green-100 p-8">
-      <h2 className="text-2xl font-bold text-center text-gray-800 mb-8">
+    <div className="bg-[#33FF0014] p-8">
+      <h2 className="text-4xl font-semibold text-center text-gray-800 mb-8">
         Featured Resources
       </h2>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
@@ -50,7 +50,7 @@ const FeaturedResources = () => {
         ))}
       </div>
       <div className="text-center mt-8">
-        <button className="text-green-600 font-bold">
+        <button className="text-white px-4 py-2 rounded-xl bg-[#1A5130] font-bold">
           More Resources
         </button>
       </div>

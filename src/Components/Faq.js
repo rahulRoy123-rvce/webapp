@@ -5,9 +5,9 @@ import AccordionItem from './Accordianitem';
 
 const FAQ = () => {
   return (
-    <div className="bg-blue-200 p-4 md:p-8">
+    <div className="bg-[#fdfaec] p-4 md:p-8">
       <h2 className="text-3xl font-semibold text-center mb-6">Frequently Asked Questions</h2>
-      <div className="max-w-3xl mx-auto">
+      <div className="max-w-3xl mx-auto bg-[#33FF0014] rounded-xl">
         <AccordionItem title="How do I invest in a Project?">
           <p>Here is the answer to how you can invest in a project...</p>
         </AccordionItem>

@@ -35,13 +35,13 @@ const Carousel = () => {
   };
 
   return (
-    <div className="p-4 bg-gray-100">
+    <div className="p-4 bg-[#fdfaec]">
       {/* Tabs for selecting cards */}
-      <div className="flex justify-center mb-4">
+      <div className="flex justify-center bg-[#fdfaec] mb-4">
         {cardData.map((card, index) => (
           <button
             key={card.category}
-            className={`px-4 py-2 mx-1 ${activeCard === index ? 'bg-blue-500 text-white' : 'bg-white'}`}
+            className={`px-8 py-2 mx-1 ${activeCard === index ? 'bg-[#1A5130] text-white rounded-xl' : 'bg-white rounded-xl'}`}
             onClick={() => handleClick(index)}
           >
             {card.category}

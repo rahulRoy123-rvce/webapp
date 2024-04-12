@@ -19,7 +19,7 @@ const GalleryGrid = () => {
           className="w-full h-[100%] object-cover rounded-lg mb-4"
         />
     </div>
-    <div className="col-start-2 justify-center items-center flex row-start-3 text-5xl font-bold">
+    <div className="col-start-2 justify-center items-center flex row-start-3 text-5xl font-bold text-[#1A5130]">
       WHY CHOOSE US?
     </div>
     <div className="row-span-3 col-start-3 row-start-1">
