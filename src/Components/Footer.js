@@ -6,61 +6,73 @@ import Whatsapp from '../UI/Whatsapp';
 import Facebook from '../UI/Facebook';
 import X from '../UI/X';
 
+
+// Import your icons from wherever you have them, e.g. react-icons, your own svg files etc.
+
 const Footer = () => {
   return (
-    <footer className="bg-[#133009] text-white">
-      <div className="max-w-6xl mx-auto  py-10">
-        <div className="flex flex-wrap justify-between items-center">
-        
-          <div className="mb-6 w-full md:w-auto md:mb-0">
-            <a href="#" className="flex items-center justify-center  space-x-2 mb-4">
-              <img src={logo} alt="DeCarbonn Logo " className="h-14" />
-              
-            </a>
-            <div className="flex flex-col">
-              <p className="mb-4">Have any query?</p>
-              <div className="flex space-x-2">
-                <input
-                  type="text"
-                  placeholder="write your query here..."
-                  className="p-2 rounded-md text-center focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-green-700 focus:ring-white"
-                />
-                <button className="bg-white text-green-700 px-4 rounded-md font-bold">Send</button>
-              </div>
-            </div>
-            <div className="flex space-x-4 mb-6 md:mb-0 my-4">
-              <a href="#" className="hover:text-gray-300"><Instagram /></a>
-              <a href="#" className="hover:text-gray-300"><Whatsapp /></a>
-              <a href="#" className="hover:text-gray-300"><Facebook /></a>
-              <a href="#" className="hover:text-gray-300"><X /></a>
-            </div>
+    <footer className="bg-green-900 text-white p-10">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="md:flex md:items-center md:justify-between">
+          <div className="flex-1 min-w-0">
+           <img src={logo} alt="logo" className="h-10" />
           </div>
-
           
-          <div className="flex flex-wrap md:space-x-20 mb-6 md:mb-0">
-            <div className="mb-6 md:mb-0">
-              <h3 className="font-bold mb-2">COMPANY</h3>
-              <ul>
-                <li><a href="#" className="hover:text-gray-300">Home</a></li>
-                <li><a href="#" className="hover:text-gray-300">Project</a></li>
-                <li><a href="#" className="hover:text-gray-300">About</a></li>
-              </ul>
+          <div className="mt-8 md:mt-0 md:order-1">
+            <p className="text-center text-base text-white">
+              Have any query?
+            </p>
+            <div className="mt-1 flex rounded-md shadow-sm">
+              <input
+                type="text"
+                name="query"
+                className="focus:ring-indigo-500 focus:border-indigo-500 flex-1 block w-full rounded-none rounded-l-md sm:text-sm border-gray-300"
+                placeholder="write your query here..."
+              />
+              <button
+                type="button"
+                className="inline-flex items-center px-3 rounded-r-md border border-l-0 border-gray-300 bg-green-700 text-white text-sm"
+              >
+                Send
+              </button>
             </div>
-            <div>
-              <h3 className="font-bold mb-2">INITIATIVES</h3>
-              <ul>
-                <li><a href="#" className="hover:text-gray-300">Maiti Labs</a></li>
-                <li><a href="#" className="hover:text-gray-300">DeCarbonn</a></li>
-                <li><a href="#" className="hover:text-gray-300">GreenBit</a></li>
-              </ul>
+            <div className="mt-8 flex justify-center space-x-6">
+              {/* Replace these placeholders with your actual icons */}
+              <img src={Instagram} className=''/>
+              <a href="#" className="text-white hover:text-green-500">
+                WhatsApp Icon
+              </a>
+              <a href="#" className="text-white hover:text-green-500">
+                Facebook Icon
+              </a>
+              <a href="#" className="text-white hover:text-green-500">
+                X Icon
+              </a>
             </div>
           </div>
         </div>
-
-       
-        <div className="flex flex-col items-center">
-          <p className="text-center py-2">Made with ❤️ at Maiti Labs</p>
-          <p>Copyright © 2024 <strong>DeCarbonn</strong></p>
+        <div className="md:flex md:items-center md:justify-between mt-8 md:mt-12 border-t border-gray-700 pt-8">
+          <div className="md:flex md:items-center md:justify-start">
+            <nav className="flex space-x-10">
+              <a href="#" className="text-base text-white hover:text-green-500">
+                Home
+              </a>
+              <a href="#" className="text-base text-white hover:text-green-500">
+                Project
+              </a>
+              <a href="#" className="text-base text-white hover:text-green-500">
+                About
+              </a>
+            </nav>
+          </div>
+          <div className="mt-8 md:mt-0 md:order-1">
+            <p className="text-center text-base text-white">
+              Made with <span className="text-red-600">&hearts;</span> at Matii Labs
+            </p>
+            <p className="text-center text-base text-white">
+              Copyright &copy; 2024 DeCarbonn
+            </p>
+          </div>
         </div>
       </div>
     </footer>
