@@ -8,15 +8,15 @@ import X from "../UI/X";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#1a5130] text-white mb-0 h-[480px]">
+    <footer className="bg-[#133009] text-white">
       <div className="max-w-6xl mx-auto  py-10">
-        <div className="flex flex-wrap justify-between items-center mt-28">
+        <div className="flex flex-wrap justify-between items-center">
           <div className="mb-6 w-full md:w-auto md:mb-0">
             <a
               href="#"
               className="flex items-center justify-center  space-x-2 mb-4"
             >
-              <img src={logo} alt="DeCarbonn Logo " className="h-20 w-72" />
+              <img src={logo} alt="DeCarbonn Logo " className="h-14" />
             </a>
             <div className="flex flex-col">
               <p className="mb-4">Have any query?</p>
