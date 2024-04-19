@@ -1,13 +1,10 @@
-import React from 'react';
-import logo from '../Assets/deCarbonn_logo.png';
+import React from "react";
+import logo from "../Assets/deCarbonn_logo.png";
 
-import Instagram from '../UI/Instagram';
-import Whatsapp from '../UI/Whatsapp';
-import Facebook from '../UI/Facebook';
-import X from '../UI/X';
-
-
-// Import your icons from wherever you have them, e.g. react-icons, your own svg files etc.
+import Instagram from "../UI/Instagram";
+import Whatsapp from "../UI/Whatsapp";
+import Facebook from "../UI/Facebook";
+import X from "../UI/X";
 
 const Footer = () => {
   return (
@@ -36,43 +33,71 @@ const Footer = () => {
                 Send
               </button>
             </div>
-            <div className="mt-8 flex justify-center space-x-6">
-              {/* Replace these placeholders with your actual icons */}
-              <img src={Instagram} className=''/>
-              <a href="#" className="text-white hover:text-green-500">
-                WhatsApp Icon
+            <div className="flex space-x-4 mb-6 md:mb-0 my-4">
+              <a href="#" className="hover:text-gray-300">
+                <Instagram />
               </a>
-              <a href="#" className="text-white hover:text-green-500">
-                Facebook Icon
+              <a href="#" className="hover:text-gray-300">
+                <Whatsapp />
               </a>
-              <a href="#" className="text-white hover:text-green-500">
-                X Icon
+              <a href="#" className="hover:text-gray-300">
+                <Facebook />
+              </a>
+              <a href="#" className="hover:text-gray-300">
+                <X />
               </a>
             </div>
           </div>
+
+          <div className="flex flex-wrap md:space-x-20 mb-6 md:mb-0">
+            <div className="mb-6 md:mb-0">
+              <h3 className="font-bold mb-2">COMPANY</h3>
+              <ul>
+                <li>
+                  <a href="#" className="hover:text-gray-300">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-gray-300">
+                    Project
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-gray-300">
+                    About
+                  </a>
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h3 className="font-bold mb-2">INITIATIVES</h3>
+              <ul>
+                <li>
+                  <a href="#" className="hover:text-gray-300">
+                    Maiti Labs
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-gray-300">
+                    DeCarbonn
+                  </a>
+                </li>
+                <li>
+                  <a href="#" className="hover:text-gray-300">
+                    GreenBit
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div className="md:flex md:items-center md:justify-between mt-8 md:mt-12 border-t border-gray-700 pt-8">
-          <div className="md:flex md:items-center md:justify-start">
-            <nav className="flex space-x-10">
-              <a href="#" className="text-base text-white hover:text-green-500">
-                Home
-              </a>
-              <a href="#" className="text-base text-white hover:text-green-500">
-                Project
-              </a>
-              <a href="#" className="text-base text-white hover:text-green-500">
-                About
-              </a>
-            </nav>
-          </div>
-          <div className="mt-8 md:mt-0 md:order-1">
-            <p className="text-center text-base text-white">
-              Made with <span className="text-red-600">&hearts;</span> at Matii Labs
-            </p>
-            <p className="text-center text-base text-white">
-              Copyright &copy; 2024 DeCarbonn
-            </p>
-          </div>
+
+        <div className="flex flex-col items-center">
+          <p className="text-center py-2">Made with ❤️ at Maiti Labs</p>
+          <p>
+            Copyright © 2024 <strong>DeCarbonn</strong>
+          </p>
         </div>
       </div>
     </footer>

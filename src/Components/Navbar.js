@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import logo from '../Assets/logo_deCarbonn.png';
+import React, { useState } from "react";
+import logo from "../Assets/logo_deCarbonn.png";
 import EastIcon from "@mui/icons-material/East";
-import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -22,13 +22,29 @@ const Navbar = () => {
               onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
               <span className="sr-only">Open menu</span>
-              <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+              <svg
+                width="24"
+                height="24"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
               </svg>
             </button>
           </div>
 
-          <div className={`absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
+          <div
+            className={`absolute top-0 inset-x-0 p-2 transition transform origin-top-right md:hidden ${
+              isMenuOpen ? "block" : "hidden"
+            }`}
+          >
             <div className="rounded-lg shadow-md bg-white ring-1 ring-black ring-opacity-5 overflow-hidden">
               <div className="px-5 pt-4 flex items-center justify-between">
                 <div>
@@ -41,19 +57,45 @@ const Navbar = () => {
                     onClick={() => setIsMenuOpen(false)}
                   >
                     <span className="sr-only">Close menu</span>
-                    <svg width="24" height="24" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12"></path>
+                    <svg
+                      width="24"
+                      height="24"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth="2"
+                        d="M6 18L18 6M6 6l12 12"
+                      ></path>
                     </svg>
                   </button>
                 </div>
               </div>
               <div className="px-2 pt-2 pb-3 space-y-1">
-                {['Home', 'Carbon Calculator', 'Projects', 'About', 'Team', 'Resources'].map((text, index) => (
-                  <a key={index} href="#" className="font-poppins block px-2 py-2 rounded-md text-base font-medium text-black hover:text-gray-900 hover:bg-gray-50 text-center">
+                {[
+                  "Home",
+                  "Carbon Calculator",
+                  "Projects",
+                  "About",
+                  "Team",
+                  "Resources",
+                ].map((text, index) => (
+                  <a
+                    key={index}
+                    href="#"
+                    className="font-poppins block px-2 py-2 rounded-md text-base font-medium text-black hover:text-gray-900 hover:bg-gray-50 text-center"
+                  >
                     {text}
                   </a>
                 ))}
-                <a href="#" className="flex font-poppins flex-row w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100">
+                <a
+                  href="#"
+                  className="flex font-poppins flex-row w-full px-5 py-3 text-center font-medium text-indigo-600 bg-gray-50 hover:bg-gray-100"
+                >
                   <div>Connect</div>
                   <ArrowForwardIcon />
                 </a>
@@ -83,6 +125,6 @@ const Navbar = () => {
       </div>
     </nav>
   );
-}
+};
 
 export default Navbar;

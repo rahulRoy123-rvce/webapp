@@ -37,8 +37,7 @@ const Carousel = () => {
   return (
     <div className="p-8 bg-[#fdfaec] flex flex-col justify-center items-center">
       {/* Tabs for selecting cards */}
-     <div className="text-[#1A5130] text-5xl font-bold my-8">See Carbon in Action</div> 
-      <div className="flex justify-between bg-white w-[800px] h-[75px] mb-4 rounded-full px-4 py-3">
+      <div className="flex justify-center bg-[#fdfaec] mb-4">
         {cardData.map((card, index) => (
           <button
             key={card.category}
