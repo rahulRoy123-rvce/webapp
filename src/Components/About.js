@@ -53,7 +53,7 @@ const BannerCard = () => {
           className="border border-black rounded-xl w-full flex  group "
           style={{ height: "620px" }}
         >
-          <div className="md:flex-1 md:pr-10 md:w-1/2 flex flex-col justify-center items-center p-7">
+          <div className="md:flex-1 md:pr-10 md:w-1/2 flex flex-col gap-8 justify-center items-center p-7">
             <h2 className="text-5xl font-bold text-[#1A5130] mb-2 text-left">
               CONNECT WITH A PROJECT AND INVEST
             </h2>
@@ -61,7 +61,7 @@ const BannerCard = () => {
               Choose a project and we'll connect you with the on-ground team
               before you invest.
             </p>
-            <button className="text-white bg-[#1A5130] transition-colors duration-300 hover:bg-white hover:text-[#1a5130] hover:border hover:border-[#1a5130] font-medium py-2 px-6 rounded-full w-72 h-12 mt-8">
+            <button className="text-white bg-[#1A5130] transition-colors duration-300 hover:bg-white hover:text-[#1a5130] hover:border hover:border-[#1a5130] font-medium text-3xl py-2 px-6 rounded-full w-72 h-12 mt-8">
               Projects
             </button>
           </div>
