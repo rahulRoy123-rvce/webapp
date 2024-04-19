@@ -28,7 +28,9 @@ const FAQItem = ({ faq, toggle, isOpen }) => (
       } bg-[#edfad9] px-5 py-3`}
       onClick={toggle}
     >
-      <p className="text-3xl text-left">{faq.question}</p>
+      <ul className="list-disc">
+      <li className="text-2xl ml-8">{faq.question}</li>
+      </ul>
       <span>{isOpen ? "▲" : "▼"}</span>
     </div>
     {isOpen && (
@@ -51,8 +53,8 @@ const FAQ = () => {
       className="bg-[#fdfaec] w-full h-full flex justify-center items-center"
       style={{ height: "560px" }}
     >
-      <div className="bg-[#edfad9] p-6 rounded-lg shadow-md w-2/3 mx-auto my-10">
-        <h2 className="text-4xl text-center font-bold mb-6 text-black">
+      <div className="bg-[#edfad9]  rounded-lg shadow-md w-2/3 mx-auto ">
+        <h2 className="text-3xl text-center font-bold  text-black">
           Frequently Asked Questions
         </h2>
         {faqData.map((faq, index) => (

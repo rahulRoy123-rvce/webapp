@@ -41,9 +41,11 @@ const BannerCard = () => {
                 <br /> find out how much CO2 your
                 <br /> business emits.
               </p>
-              <button className="text-white bg-[#1A5130] transition-colors duration-300 hover:bg-white hover:text-[#1a5130] hover:border hover:border-[#1a5130] font-medium py-2 px-6 rounded-full w-72 h-12">
+              <div>
+              <button className="text-white text-2xl bg-[#1A5130] transition-colors duration-300 hover:bg-white hover:text-[#1a5130] hover:border hover:border-[#1a5130] font-medium py-2 px-6 rounded-full w-72 h-12">
                 Carbon Calculator
               </button>
+              </div>
             </div>
           </div>
         </div>
@@ -62,9 +64,11 @@ const BannerCard = () => {
               Choose a project and we'll connect you with the on-ground team
               before you invest.
             </p>
-            <button className="text-white bg-[#1A5130] transition-colors duration-300 hover:bg-white hover:text-[#1a5130] hover:border hover:border-[#1a5130] font-medium text-3xl py-2 px-6 rounded-full w-72 h-12 mt-8">
+            <div>
+            <button className="text-white  bg-[#1A5130] transition-colors duration-300 hover:bg-white hover:text-[#1a5130] hover:border hover:border-[#1a5130] font-medium text-3xl py-2 px-6 rounded-full w-72 h-12 mt-8">
               Projects
             </button>
+            </div>
           </div>
           <div
             className="md:w-[750px] h-full overflow-hidden rounded-lg"
@@ -104,9 +108,11 @@ const BannerCard = () => {
                 <br /> wallet and track your investment
                 <br /> impact every month
               </p>
-              <button className="text-white bg-[#1A5130] transition-colors duration-300 hover:bg-white hover:text-[#1a5130] hover:border hover:border-[#1a5130] font-medium py-2 px-6 rounded-full w-72 h-12">
+              <div>
+              <button className="text-white text-2xl bg-[#1A5130] transition-colors duration-300 hover:bg-white hover:text-[#1a5130] hover:border hover:border-[#1a5130] font-medium py-2 px-6 rounded-full w-72 h-12">
                 Track Here
               </button>
+              </div>
             </div>
           </div>
         </div>

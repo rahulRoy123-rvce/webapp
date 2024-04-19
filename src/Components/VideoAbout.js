@@ -2,10 +2,10 @@ import React from "react";
 
 const VideoAbout = () => {
   return (
-    <div className="bg-[#fdfaec] w-full">
+    <div className="bg-[#fdfaec] w-full my-16">
       <div className="p-12">
         <div
-          className="border border-black rounded-xl w-full flex flex-col group "
+          className=" rounded-xl w-full flex flex-col group "
           style={{ height: "670px" }}
         >
           <h1 className="text-6xl font-bold text-[#1A5130] mb-10">
@@ -26,10 +26,14 @@ const VideoAbout = () => {
               <p className="text-[#403E3E] text-left text-3xl mb-6">
                 Join us in our journey towards a sustainable future. Together,
                 we can make a difference.
+                
               </p>
+              <p>
               <button className="text-white bg-[#1A5130] transition-colors duration-300 hover:bg-white hover:text-[#1a5130] hover:border hover:border-[#1a5130] font-medium py-2 px-6 rounded-full w-72 h-12">
                 About Us
               </button>
+              </p>
+             
             </div>
             <div className="md:flex-1 mt-6 md:mt-0">
               <div className="bg-gray-200 w-full h-96 flex items-center justify-center rounded-lg">

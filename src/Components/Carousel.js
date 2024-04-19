@@ -37,6 +37,7 @@ const Carousel = () => {
   return (
     <div className="p-8 bg-[#fdfaec] flex flex-col justify-center items-center">
       {/* Tabs for selecting cards */}
+      <div className="text-6xl text-[#1A5130] my-8 font-bold">See Carbon in Action</div>
       <div className="flex justify-center bg-[#fdfaec] mb-4">
         {cardData.map((card, index) => (
           <button
