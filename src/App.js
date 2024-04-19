@@ -11,11 +11,13 @@ import Footer from "./Components/Footer";
 import Banner from "./Components/Banner";
 import Navbar1 from "./Components/Navbar_og";
 import Featured from "./Components/Featured";
+import CarouselComponent from "./Components/CarouselComponent";
 function App() {
   return (
     <div className="App bg-[#fdfaec]">
       <Navbar />
       <Banner />
+
       <Carousel />
       <About />
       <VideoAbout />

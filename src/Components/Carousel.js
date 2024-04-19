@@ -1,28 +1,27 @@
-
-import React, { useState } from 'react';
-import Card from './Card'; 
-import frame1 from '../Assets/frame1.png';
-import frame2 from '../Assets/frame2.png';
-import frame3 from '../Assets/frame3.png';
+import React, { useState } from "react";
+import Card from "./Card";
+import frame1 from "../Assets/frame1.png";
+import frame2 from "../Assets/frame2.png";
+import frame3 from "../Assets/frame3.png";
 
 const cardData = [
   {
-    title: 'Carbon',
+    title: "Carbon",
     imageSrc: frame1,
-    chartType: 'bar',
-    category: 'Carbon',
+    chartType: "bar",
+    category: "Carbon",
   },
   {
-    title: 'Wildlife',
+    title: "Wildlife",
     imageSrc: frame2,
-    chartType: 'gauge',
-    category: 'Wildlife',
+    chartType: "gauge",
+    category: "Wildlife",
   },
   {
-    title: 'Communities',
+    title: "Communities",
     imageSrc: frame3,
-    chartType: 'pie',
-    category: 'Communities',
+    chartType: "pie",
+    category: "Communities",
   },
   // Add more card data objects as needed
 ];
@@ -35,13 +34,17 @@ const Carousel = () => {
   };
 
   return (
-    <div className="p-4 bg-[#fdfaec]">
+    <div className="p-8 bg-[#fdfaec] flex flex-col justify-center items-center">
       {/* Tabs for selecting cards */}
-      <div className="flex justify-center bg-[#fdfaec] mb-4">
+      <div className="flex justify-between bg-white w-[800px] h-[75px] mb-4 rounded-full px-4 py-3">
         {cardData.map((card, index) => (
           <button
             key={card.category}
-            className={`px-8 py-2 mx-1 ${activeCard === index ? 'bg-[#1A5130] text-white rounded-xl' : 'bg-white rounded-xl'}`}
+            className={`px-8 py-3 w-[240px] mx-1 transition duration-200 hover:drop-shadow-lg ${
+              activeCard === index
+                ? "bg-[#1A5130] text-white rounded-full"
+                : "bg-white rounded-full"
+            }`}
             onClick={() => handleClick(index)}
           >
             {card.category}
