@@ -21,18 +21,18 @@ const faqData = [
 ];
 
 const FAQItem = ({ faq, toggle, isOpen }) => (
-  <div className="mb-2">
+  <div className="mb-2 ">
     <div
       className={`flex justify-between items-center text-lg font-semibold text-gray-800 cursor-pointer ${
         isOpen ? "rounded-t-lg" : "rounded-lg"
       } bg-[#edfad9] px-5 py-3`}
       onClick={toggle}
     >
-      <p className="text-3xl">{faq.question}</p>
+      <p className="text-3xl text-left">{faq.question}</p>
       <span>{isOpen ? "▲" : "▼"}</span>
     </div>
     {isOpen && (
-      <div className="px-5 py-3 bg-[#edfad9] rounded-b-lg text-gray-700 text-xl font-semibold">
+      <div className="px-5 py-3 bg-[#edfad9] rounded-b-lg text-gray-700 text-left text-xl font-semibold">
         {faq.answer}
       </div>
     )}
