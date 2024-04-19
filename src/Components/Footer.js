@@ -12,8 +12,8 @@ import X from '../UI/X';
 const Footer = () => {
   return (
     <footer className="bg-green-900 text-white p-10">
-      <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="md:flex md:items-center md:justify-between">
+      <div className="flex flex-row justify-between max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col md:flex md:items-center md:justify-between">
           <div className="flex-1 min-w-0">
            <img src={logo} alt="logo" className="h-10" />
           </div>

@@ -11,7 +11,7 @@ const Card = ({ title, imageSrc, chartType }) => {
     <div className="bg-[#fdfaec] rounded-lg  overflow-hidden">
       {/* Card Header */}
       <div className="p-4 border-b">
-        <h2 className="font-bold text-lg">{title}</h2>
+        {/* <h2 className="font-bold text-lg">{title}</h2> */}
       </div>
       {/* Card Image */}
       <img src={imageSrc} alt={title} className="w-full" />

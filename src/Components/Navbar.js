@@ -61,9 +61,9 @@ const Navbar = () => {
             </div>
           </div>
 
-          <div className="hidden md:flex items-center justify-center md:flex-1">
-            <ul className="flex space-x-7">
-              {['Home', 'Carbon Calculator', 'Projects', 'About', 'Team', 'Resources'].map((text, index) => (
+          <div className="hidden md:flex items-center justify-end md:flex-1">
+            <ul className="flex space-x-24">
+              {['Home', 'Projects', 'About'].map((text, index) => (
                 <li key={index} className="font-poppins text-black text-xl font-semibold hover:scale-105 hover:underline cursor-pointer">
                   {text}
                 </li>
@@ -72,7 +72,7 @@ const Navbar = () => {
           </div>
 
           <div className=" flex items-center">
-            <button className="bg-white shadow-lg flex px-2 gap-2 justify-center items-center font-semibold text-xl rounded-3xl h-12 py-2  hover:bg-[#1a5130] hover:text-white  hover:shadow-xl transition duration-300">
+            <button className="bg-white mx-4 shadow-lg flex px-2 gap-2 justify-center items-center font-semibold text-xl rounded-3xl h-12 py-2  hover:bg-[#1a5130] hover:text-white  hover:shadow-xl transition duration-300">
               <div to="/" className="text-2xl font-semibold">
                 Connect
               </div>
