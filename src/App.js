@@ -9,9 +9,7 @@ import FeaturedResources from "./Components/FeaturedResources";
 import FAQ from "./Components/Faq";
 import Footer from "./Components/Footer";
 import Banner from "./Components/Banner";
-import Navbar1 from "./Components/Navbar_og";
-import Featured from "./Components/Featured";
-import CarouselComponent from "./Components/CarouselComponent";
+
 function App() {
   return (
     <div className="App bg-[#fdfaec]">
@@ -23,8 +21,9 @@ function App() {
       <VideoAbout />
       <GalleryGrid />
       <FeaturedResources />
-      {/* <Featured /> */}
+
       <FAQ />
+
       <Footer />
     </div>
   );
