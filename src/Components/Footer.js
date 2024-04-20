@@ -10,13 +10,13 @@ const Footer = () => {
   return (
     <footer
       className="bg-[#1a5130] text-white w-full "
-      style={{ height: "500px" }}
+      style={{ height: "560px" }}
     >
       <div className="w-full mx-auto  ">
         <div className="flex flex-wrap justify-between items-center">
           {/* Logo and query section */}
-          <div className="mb-6 w-full md:w-auto md:mb-0 p-10 ml-20">
-            <a href="#" className="flex items-center space-x-2 mb-20 ">
+          <div className="mb-6 w-full md:w-auto md:mb-0 p-10 ml-20 mt-20">
+            <a href="#" className="flex items-center space-x-2 mb-10 ">
               <img src={logo} alt="DeCarbonn Logo" className="h-20 w-20" />
               <span className="font-bold text-6xl">DeCarbonn</span>
             </a>
@@ -78,7 +78,7 @@ const Footer = () => {
         {/* <div className="border-t border-white border-opacity-25 my-6"></div> */}
 
         {/* Bottom section */}
-        <div className="flex flex-col items-center text-2xl font-light">
+        <div className="flex flex-col items-center text-2xl font-light mb-5">
           <p className="text-center py-2">Made with ❤️ at Maiti Labs</p>
           <p>
             Copyright © 2024 <strong className="font-bold">DeCarbonn</strong>
