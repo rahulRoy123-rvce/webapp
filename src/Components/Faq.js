@@ -29,13 +29,15 @@ const FAQItem = ({ faq, toggle, isOpen }) => (
       onClick={toggle}
     >
       <ul className="list-disc">
-      <li className="text-2xl ml-8">{faq.question}</li>
+        <li className="text-3xl ml-8">{faq.question}</li>
       </ul>
       <span>{isOpen ? "▲" : "▼"}</span>
     </div>
     {isOpen && (
-      <div className="px-5 py-3 bg-[#edfad9] rounded-b-lg text-gray-700 text-left text-xl font-semibold">
-        {faq.answer}
+      <div className="pl-10">
+        <div className="px-5 py-3 pl-5 bg-[#edfad9] rounded-b-lg text-gray-700 text-left text-2xl font-semibold">
+          {faq.answer}
+        </div>
       </div>
     )}
   </div>
@@ -54,7 +56,7 @@ const FAQ = () => {
       style={{ height: "560px" }}
     >
       <div className="bg-[#edfad9]  rounded-lg shadow-md w-2/3 mx-auto ">
-        <h2 className="text-3xl text-center font-bold  text-black">
+        <h2 className="text-4xl text-center font-bold  text-black mb-5 mt-5">
           Frequently Asked Questions
         </h2>
         {faqData.map((faq, index) => (

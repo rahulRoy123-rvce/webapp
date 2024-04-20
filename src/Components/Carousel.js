@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import Card from "./Card";
 import frame1 from "../Assets/frame1.png";
@@ -37,19 +36,21 @@ const Carousel = () => {
   return (
     <div className="p-8 bg-[#fdfaec] flex flex-col justify-center items-center">
       {/* Tabs for selecting cards */}
-      <div className="text-6xl text-[#1A5130] my-8 font-bold">See Carbon in Action</div>
-      <div className="flex justify-center bg-[#fdfaec] mb-4">
+      <div className="text-6xl text-[#1A5130] my-8 font-bold mb-20">
+        See Carbon in Action
+      </div>
+      <div className="flex justify-between h-20 text-3xl  mb-4 bg-white rounded-full p-3 w-[950px]">
         {cardData.map((card, index) => (
           <button
             key={card.category}
-            className={`px-8 py-3 w-[240px] mx-1 transition duration-200 hover:drop-shadow-lg ${
+            className={`px-8 py-3 w-[270px] mx-1 transition duration-200 hover:drop-shadow-lg flex justify-center items-center font-serif ${
               activeCard === index
                 ? "bg-[#1A5130] text-white rounded-full"
-                : "bg-white rounded-full"
+                : "bg-white text-[#1A5130] rounded-full"
             }`}
             onClick={() => handleClick(index)}
           >
-            {card.category}
+            <span> {card.category}</span>
           </button>
         ))}
       </div>

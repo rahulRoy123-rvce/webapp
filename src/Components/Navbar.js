@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 backdrop-blur bg-opacity-75 text-black shadow-md py-2">
+    <nav className="sticky top-0 z-50 backdrop-blur  bg-opacity-75 text-black shadow-md py-2">
       <div className="mx-3">
         <div className="flex justify-between items-center py-3 md:space-x-10">
           <div className="flex items-center">
@@ -105,8 +105,11 @@ const Navbar = () => {
 
           <div className="hidden md:flex items-center justify-end md:flex-1">
             <ul className="flex space-x-24">
-              {['Home', 'Projects', 'About'].map((text, index) => (
-                <li key={index} className="font-poppins text-black text-xl font-semibold hover:scale-105 hover:underline cursor-pointer">
+              {["Home", "Projects", "About"].map((text, index) => (
+                <li
+                  key={index}
+                  className="font-poppins text-black text-xl font-semibold hover:scale-105 hover:underline cursor-pointer"
+                >
                   {text}
                 </li>
               ))}
